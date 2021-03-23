@@ -1,0 +1,75 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+<title> The Family Book
+  </title>
+  </head>
+
+<body>
+<h1> The Family Book
+  </h1>
+<img id="album" src="https://images-na.ssl-images-amazon.com/images/I/91zbi9M+mKL.jpg"> 
+
+<h1 id="family-Name"> Family </h1>
+
+ <div>
+     <button type="button" onclick="NextSilde()">
+Next
+      </button>
+    </div>  
+   
+<script>
+
+// Family the id to be refer for innerHTML is family-Name
+var Family=["Family","Arturo","Dania","Kevin","Yerik"];
+    console.log(Family);
+    document.getElementById("family-Name").innerHTML=Family
+
+    // Family the id to be refer for innerHTML is family-Name
+    console.log(Family[0]);
+    document.getElementById("family-Name").innerHTML=Family[0]
+
+    // Family the id to be refer for innerHTML is family-Name
+    console.log(Family[1]);
+    document.getElementById("family-Name").innerHTML=Family[1]
+  
+ // Family the id to be refer for innerHTML is family-Name
+    console.log(Family[2]);
+    document.getElementById("family-Name").innerHTML=Family[2]
+
+    // Family the id to be refer for innerHTML is family-Name
+    console.log(Family[3]);
+    document.getElementById("family-Name").innerHTML=Family[3]
+  
+    // Family the id to be refer for innerHTML is family-Name
+    console.log(Family[4]);
+    document.getElementById("family-Name").innerHTML=Family[4]
+
+ // Family the id to be refer for innerHTML is family-Name
+ console.log(Family.length);
+    document.getElementById("family-Name").innerHTML=Family.length
+
+var Images= [
+  "https://images-na.ssl-images-amazon.com/images/I/91zbi9M+mKL.jpg",
+  "https://clipartart.com/images/dad-with-kids-clipart-13.jpg",
+  "https://i.pinimg.com/originals/ed/1e/cc/ed1ecce22d15db09bd24fca471fba80a.jpg",
+  "https://www.pngitem.com/pimgs/m/94-941927_dark-skinned-boy-big-cartoon-dark-skin-man.png",
+  "https://image.freepik.com/free-vector/kid-yawning-stretching_33070-1824.jpg"]
+
+  var i= 0;
+function NextSilde() {
+  
+  if (i == 5) {
+    i=0;
+  }
+   
+  document.getElementById("album").src = Images[i];
+  document.getElementById("family-Name").innerHTML=Family[i];
+  i++;
+  }
+</script>
+
+</body>
+   
+</html>   
